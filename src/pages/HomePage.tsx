@@ -101,9 +101,6 @@ export default function HomePage() {
       {/* Why Us */}
       <WhyUs />
 
-      {/* Testimonials */}
-      <Testimonials />
-
       {/* CTA */}
       <ContactCTA />
       </>
