@@ -33,8 +33,8 @@ const TRUST = [
 
 export default function HeroSection({ onSearch }: Props) {
   const { scrollY } = useScroll();
-  const bgY        = useTransform(scrollY, [0, 700], ['0%', '22%']);
-  const bgOpacity  = useTransform(scrollY, [0, 500], [0.68, 0.38]);
+  const bgY        = useTransform(scrollY, [0, 700], ['0%', '15%']);
+  const bgOpacity  = useTransform(scrollY, [0, 500], [1, 0.6]);
 
   return (
     <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
@@ -45,10 +45,10 @@ export default function HeroSection({ onSearch }: Props) {
           src="/faro-lecheria.jpg"
           alt="Faro de Lechería · Barcelona"
           style={{ y: bgY, opacity: bgOpacity }}
-          className="absolute -top-[10%] left-0 w-full h-[120%] object-cover object-[center_40%]"
+          className="absolute -top-[10%] left-0 w-full h-[120%] object-cover object-[62%_center]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-950/96 via-navy-950/72 to-navy-950/20" />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-transparent to-navy-950/35" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/50 to-navy-950/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-transparent to-navy-950/20" />
         {/* ambient forest glow top-left */}
         <div className="absolute -top-32 -left-32 w-[600px] h-[600px] rounded-full bg-navy-500/8 blur-[120px] pointer-events-none" />
         <div className="absolute top-1/3 right-0 w-[400px] h-[400px] rounded-full bg-gold-500/5 blur-[100px] pointer-events-none" />
