@@ -7,7 +7,6 @@ import SearchBar from '../components/home/SearchBar';
 import FeaturedProperties from '../components/home/FeaturedProperties';
 import WhyUs from '../components/home/WhyUs';
 import StatsBar from '../components/home/StatsBar';
-import Testimonials from '../components/home/Testimonials';
 import ContactCTA from '../components/home/ContactCTA';
 import { useProperties } from '../hooks/useProperties';
 import type { SearchFilters } from '../types/property';
