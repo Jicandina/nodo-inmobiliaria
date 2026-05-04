@@ -5,17 +5,17 @@ export default {
     extend: {
       colors: {
         navy: {
-          50:  '#eef5ef',
-          100: '#cde3d1',
-          200: '#9ec9a6',
-          300: '#6aa877',
-          400: '#428451',
-          500: '#276133',
-          600: '#1a4a25',
-          700: '#103318',
-          800: '#0a200f',
-          900: '#061209',
-          950: '#030904',
+          50:  '#ebf0f8',
+          100: '#d0dff0',
+          200: '#a8c0d8',
+          300: '#7a9dc0',
+          400: '#507099',
+          500: '#344c7c',
+          600: '#2b3f6a',
+          700: '#223458',
+          800: '#1b2b4a',
+          900: '#132035',
+          950: '#0b1525',
         },
         gold: {
           50:  '#fffbeb',
@@ -37,8 +37,8 @@ export default {
       boxShadow: {
         'gold':      '0 0 20px rgba(245,158,11,0.2)',
         'gold-lg':   '0 0 40px rgba(245,158,11,0.35)',
-        'card':      '0 4px 24px rgba(3,9,4,0.55)',
-        'card-hover':'0 12px 40px rgba(3,9,4,0.75)',
+        'card':      '0 4px 24px rgba(11,21,37,0.55)',
+        'card-hover':'0 12px 40px rgba(11,21,37,0.75)',
       },
       animation: {
         'fade-in':    'fadeIn 0.6s ease-out forwards',
