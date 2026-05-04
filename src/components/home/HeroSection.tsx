@@ -156,10 +156,10 @@ export default function HeroSection({ onSearch }: Props) {
                   whileHover={{ scale: 1.02, rotateX: 2, rotateY: i === 0 ? -3 : 3 }}
                   className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl transition-[border-color] duration-300 group-hover/card:border-gold-500/40"
                   style={{
-                    background: 'rgba(3,9,4,0.90)',
+                    background: 'rgba(11,21,37,0.90)',
                     backdropFilter: 'blur(16px)',
                     transformStyle: 'preserve-3d',
-                    boxShadow: '0 20px 60px rgba(3,9,4,0.7), 0 0 0 1px rgba(255,255,255,0.06)',
+                    boxShadow: '0 20px 60px rgba(11,21,37,0.7), 0 0 0 1px rgba(255,255,255,0.06)',
                   }}
                 >
                   <div className="relative h-44 overflow-hidden">
