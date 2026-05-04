@@ -1,60 +1,69 @@
-import { Star, Quote } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const TESTIMONIALS = [
   {
     name: 'Patricia Herrera',
     role: 'Compradora — Las Mercedes',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80',
-    rating: 5,
-    text: 'El equipo de El Faro fue excepcional. Encontraron exactamente lo que buscaba en tiempo récord y manejaron toda la documentación sin errores. Fue la experiencia más fluida que he tenido comprando un inmueble.',
+    text: 'El equipo de El Faro encontró exactamente lo que buscaba y manejó toda la documentación sin un solo error. La experiencia más fluida que he tenido comprando un inmueble.',
   },
   {
     name: 'Alejandro Bravo',
     role: 'Vendedor — El Hatillo',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80',
-    rating: 5,
-    text: 'Vendí mi casa en 5 semanas al precio que pedí. Los asesores conocen el mercado a la perfección y su estrategia de marketing es de primera. Totalmente profesional y transparente en cada paso.',
+    text: 'Vendí mi casa en 5 semanas al precio que pedí. Conocen el mercado a la perfección y su proceso es completamente transparente.',
   },
   {
     name: 'Valeria Díaz',
     role: 'Arrendataria — Chacao',
-    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&q=80',
-    rating: 5,
-    text: 'Busqué oficina en Chacao por semanas sin éxito. El Faro me encontró el espacio ideal en menos de una semana y negociaron mejores condiciones de lo que esperaba. Son mi inmobiliaria de confianza.',
+    text: 'Busqué oficina por semanas sin éxito. El Faro encontró el espacio ideal en menos de una semana y negoció mejores condiciones de las que esperaba.',
   },
 ];
 
 export default function Testimonials() {
   return (
-    <section className="bg-navy-900/30 border-y border-white/5 py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
-          <div className="section-accent mx-auto" />
-          <h2 className="section-title">Lo que dicen nuestros clientes</h2>
-          <p className="section-subtitle">Más de 3,000 familias y empresas confían en nosotros</p>
-        </div>
+    <section className="py-24 px-6 sm:px-10 lg:px-20 max-w-7xl mx-auto">
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {TESTIMONIALS.map(({ name, role, avatar, rating, text }) => (
-            <div key={name} className="card p-7 flex flex-col hover:border-gold-500/20 transition-all duration-300">
-              <Quote className="w-8 h-8 text-gold-500/25 mb-4" />
-              <p className="text-navy-300/80 text-sm leading-relaxed flex-1 mb-6">"{text}"</p>
-              <div className="flex items-center gap-1 mb-4">
-                {Array.from({ length: rating }).map((_, i) => (
-                  <Star key={i} className="w-4 h-4 text-gold-400 fill-gold-400" />
-                ))}
-              </div>
-              <div className="flex items-center gap-3 pt-4 border-t border-white/5">
-                <img src={avatar} alt={name} className="w-10 h-10 rounded-full object-cover opacity-80 ring-2 ring-gold-500/20" />
-                <div>
-                  <p className="text-white font-semibold text-sm">{name}</p>
-                  <p className="text-navy-500 text-xs mt-0.5">{role}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-16"
+      >
+        <div>
+          <p className="text-gold-400 text-[11px] font-semibold tracking-[0.25em] uppercase mb-4">Testimonios</p>
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-white leading-tight">
+            Lo que dicen<br />quienes confiaron.
+          </h2>
         </div>
+        <p className="text-white/30 text-sm max-w-xs">
+          Más de 3.000 clientes han encontrado su propiedad con nosotros.
+        </p>
+      </motion.div>
+
+      <div className="divide-y divide-white/6">
+        {TESTIMONIALS.map(({ name, role, text }, i) => (
+          <motion.div
+            key={name}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-30px' }}
+            transition={{ duration: 0.55, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+            className="grid grid-cols-1 md:grid-cols-[80px_1fr_220px] gap-6 md:gap-12 py-10 group"
+          >
+            <span className="font-display text-5xl font-bold text-white/8 leading-none select-none pt-1">
+              {String(i + 1).padStart(2, '0')}
+            </span>
+            <p className="font-display text-xl md:text-2xl text-white/75 leading-snug italic group-hover:text-white/90 transition-colors duration-300">
+              "{text}"
+            </p>
+            <div className="md:text-right pt-1">
+              <p className="text-white font-semibold text-sm">{name}</p>
+              <p className="text-white/30 text-xs mt-1">{role}</p>
+            </div>
+          </motion.div>
+        ))}
       </div>
+
     </section>
   );
 }

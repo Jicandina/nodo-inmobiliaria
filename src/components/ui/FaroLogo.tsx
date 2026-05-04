@@ -5,14 +5,14 @@ interface FaroLogoProps {
 }
 
 export default function FaroLogo({ size = 36, className = '' }: FaroLogoProps) {
-  const height = Math.round(size * 1.8);
+  const height = Math.round(size * 1.4);
   return (
     <div className={`flex items-center ${className}`}>
       <div
         style={{
           background: 'white',
-          borderRadius: '8px',
-          padding: '4px 10px',
+          borderRadius: '7px',
+          padding: '3px 8px',
           display: 'inline-flex',
           alignItems: 'center',
         }}
