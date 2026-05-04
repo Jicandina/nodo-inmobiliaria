@@ -18,12 +18,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-14 border-b border-white/5">
 
           <div className="md:col-span-5">
-            <img
-              src="/logo-elfaro.png"
-              alt="El Faro Bienes Raíces"
-              className="h-12 w-auto mb-6"
-              style={{ filter: 'brightness(0) invert(1)', opacity: 0.9 }}
-            />
+            <div className="inline-flex mb-6" style={{ background: 'white', borderRadius: '7px', padding: '3px 8px' }}>
+              <img
+                src="/logo-elfaro.png"
+                alt="El Faro Bienes Raíces"
+                className="h-10 w-auto"
+                style={{ objectFit: 'contain', display: 'block' }}
+              />
+            </div>
             <p className="text-white/30 text-sm leading-relaxed max-w-xs">
               Desde 2014, guiando a familias y empresas hacia la propiedad perfecta en Venezuela.
             </p>

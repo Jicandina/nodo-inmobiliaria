@@ -1,14 +1,7 @@
 import { Link } from 'react-router-dom';
 import PageTransition from '../components/ui/PageTransition';
-import { Shield, Heart, TrendingUp, Star, CheckCircle2, Users } from 'lucide-react';
+import { Shield, Heart, TrendingUp, Star, Users } from 'lucide-react';
 import { useSEO } from '../hooks/useSEO';
-
-const TEAM = [
-  { name: 'Rafael Díaz',     role: 'Director General',          exp: '18 años en bienes raíces',      img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&q=80' },
-  { name: 'Carmen Salazar',  role: 'Directora Comercial',       exp: '14 años en el mercado venezolano', img: 'https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?w=300&q=80' },
-  { name: 'Luis Montoya',    role: 'Asesor Senior — Caracas',   exp: '10 años cerrando negocios',     img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&q=80' },
-  { name: 'Daniela Ospino',  role: 'Asesora — Valencia & Oriente', exp: '7 años en el sector',        img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&q=80' },
-];
 
 const VALUES = [
   { icon: Shield,    title: 'Confianza',      desc: 'Cada propiedad verificada personalmente. Cero sorpresas ni letra pequeña.' },
@@ -123,32 +116,6 @@ export default function AboutPage() {
               <div className="pb-2 pt-2">
                 <span className="text-gold-500 text-sm font-semibold">{year}</span>
                 <p className="text-navy-200 mt-0.5">{event}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-        <div className="text-center mb-12">
-          <div className="section-accent mx-auto" />
-          <h2 className="section-title">Nuestro equipo</h2>
-          <p className="section-subtitle">Asesores que conocen el mercado venezolano en profundidad</p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {TEAM.map(({ name, role, exp, img }) => (
-            <div key={name} className="card group hover:border-gold-500/25 hover:-translate-y-1 transition-all duration-300">
-              <div className="h-52 overflow-hidden">
-                <img src={img} alt={name} className="w-full h-full object-cover opacity-75 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500" />
-              </div>
-              <div className="p-5">
-                <h3 className="text-white font-bold">{name}</h3>
-                <p className="text-gold-400 text-sm font-medium mt-0.5">{role}</p>
-                <div className="flex items-center gap-1.5 mt-2">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-gold-500/60" />
-                  <span className="text-navy-500 text-xs">{exp}</span>
-                </div>
               </div>
             </div>
           ))}
