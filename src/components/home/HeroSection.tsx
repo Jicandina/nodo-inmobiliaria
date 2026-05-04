@@ -42,8 +42,8 @@ export default function HeroSection({ onSearch }: Props) {
       {/* Parallax background */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <motion.img
-          src="/avila-panorama.webp"
-          alt="El Ávila · Caracas"
+          src="/faro-lecheria.jpg"
+          alt="Faro de Lechería · Barcelona"
           style={{ y: bgY, opacity: bgOpacity }}
           className="absolute -top-[10%] left-0 w-full h-[120%] object-cover object-[center_40%]"
         />
