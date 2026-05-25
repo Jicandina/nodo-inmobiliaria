@@ -20,10 +20,10 @@ export default function HeroSection({ onSearch }: Props) {
       {/* Full-bleed photo */}
       <div className="absolute inset-0">
         <motion.img
-          src="/faro-lecheria.jpg"
+          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=2000&q=85"
           alt="Propiedad premium en Venezuela"
           style={{ y: bgY }}
-          className="absolute w-full h-[112%] -top-[6%] object-cover object-[62%_center]"
+          className="absolute w-full h-[112%] -top-[6%] object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/55 to-navy-950/10" />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-950/75 via-navy-950/20 to-transparent" />
