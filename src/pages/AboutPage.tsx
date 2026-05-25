@@ -16,13 +16,13 @@ const MILESTONES = [
   { year: '2018', event: 'Superamos 1,000 transacciones exitosas' },
   { year: '2020', event: 'Lanzamos nuestra plataforma digital' },
   { year: '2022', event: 'Abrimos oficinas en Barcelona y Barquisimeto' },
-  { year: '2024', event: 'Más de 3,000 familias encontraron su hogar con nosotros' },
+  { year: '2024', event: 'Más de 3.000 familias encontraron su hogar con nosotros' },
 ];
 
 export default function AboutPage() {
   useSEO({
     title: 'Nosotros | Inmobiliaria',
-    description: 'Conoce al equipo de Inmobiliaria. Más de 10 años de experiencia en el mercado inmobiliario venezolano, 3,000+ clientes satisfechos.',
+    description: 'Conoce al equipo de Inmobiliaria. Más de 10 años de experiencia en el mercado inmobiliario venezolano, 3.000+ clientes satisfechos.',
   });
 
   return (
@@ -60,7 +60,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { value: '600+',    label: 'Propiedades' },
-                  { value: '3,000+', label: 'Clientes' },
+                  { value: '3.000+', label: 'Clientes' },
                   { value: '15',     label: 'Ciudades' },
                   { value: '10 años', label: 'Experiencia' },
                 ].map(({ value, label }) => (
