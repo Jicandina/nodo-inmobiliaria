@@ -7,7 +7,7 @@ interface Props { onSearch: () => void; }
 const STATS = [
   { value: '10+',    label: 'Años activos' },
   { value: '3.000+', label: 'Clientes' },
-  { value: '8',      label: 'Ciudades' },
+  { value: '15',     label: 'Ciudades' },
 ];
 
 export default function HeroSection({ onSearch }: Props) {
@@ -21,7 +21,7 @@ export default function HeroSection({ onSearch }: Props) {
       <div className="absolute inset-0">
         <motion.img
           src="/faro-lecheria.jpg"
-          alt="Faro de Lechería · Barcelona"
+          alt="Propiedad premium en Venezuela"
           style={{ y: bgY }}
           className="absolute w-full h-[112%] -top-[6%] object-cover object-[62%_center]"
         />

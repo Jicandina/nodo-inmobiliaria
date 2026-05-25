@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { ArrowRight, Home, TrendingUp } from 'lucide-react';
 import PageTransition from '../components/ui/PageTransition';
 import HeroSection from '../components/home/HeroSection';
 import SearchBar from '../components/home/SearchBar';
@@ -69,7 +70,7 @@ export default function HomePage() {
               <Link to={cat.to}
                 className="relative overflow-hidden rounded-2xl h-52 flex group border border-white/5 hover:border-gold-500/30 transition-all duration-300">
                 <img src={cat.img} alt={cat.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-35 group-hover:opacity-45" />
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-55 group-hover:opacity-70" />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-950/95 to-navy-950/20" />
                 <div className="absolute inset-0 p-6 flex flex-col justify-end">
                   <span className={cat.badge === 'Alquiler' ? 'badge-rent mb-2 self-start' : 'badge-sale mb-2 self-start'}>
@@ -99,6 +100,45 @@ export default function HomePage() {
 
       {/* Why Us */}
       <WhyUs />
+
+      {/* Sell your property */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+          className="relative overflow-hidden rounded-3xl border border-gold-500/15 bg-gradient-to-r from-navy-900 to-navy-800"
+        >
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-gold-500/8 via-transparent to-transparent" />
+          <div className="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8 px-8 py-10 sm:px-12">
+            <div className="flex items-start gap-5">
+              <div className="w-12 h-12 rounded-2xl bg-gold-500/15 border border-gold-500/25 flex items-center justify-center shrink-0 mt-0.5">
+                <Home className="w-5 h-5 text-gold-400" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-1.5">
+                  <TrendingUp className="w-3.5 h-3.5 text-gold-400" />
+                  <span className="text-gold-400 text-[11px] font-semibold tracking-[0.22em] uppercase">Para propietarios</span>
+                </div>
+                <h3 className="font-display text-2xl sm:text-3xl font-bold text-white leading-tight">
+                  ¿Tienes una propiedad<br className="hidden sm:block" /> que vender o alquilar?
+                </h3>
+                <p className="text-white/40 text-sm mt-2 max-w-md leading-relaxed">
+                  Publicamos tu inmueble, lo mostramos a miles de compradores verificados y cerramos el trato contigo. Comisión solo al vender.
+                </p>
+              </div>
+            </div>
+            <Link
+              to="/contacto"
+              className="group flex items-center gap-2.5 shrink-0 bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold text-sm px-7 py-4 rounded-xl transition-colors duration-200 whitespace-nowrap"
+            >
+              Publicar mi propiedad
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+            </Link>
+          </div>
+        </motion.div>
+      </section>
 
       {/* CTA */}
       <ContactCTA />

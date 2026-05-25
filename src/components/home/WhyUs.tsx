@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const REASONS = [
   { icon: Shield,     num: '01', title: 'Propiedades verificadas',       description: 'Cada propiedad es inspeccionada físicamente por nuestro equipo antes de publicarse. Cero sorpresas.' },
-  { icon: Users,      num: '02', title: 'Asesores certificados',         description: 'Nuestros agentes tienen más de 8 años de experiencia promedio en el mercado inmobiliario venezolano.' },
+  { icon: Users,      num: '02', title: 'Asesores certificados',         description: 'Nuestros agentes acumulan más de 10 años de experiencia en el mercado inmobiliario venezolano.' },
   { icon: TrendingUp, num: '03', title: 'Precios reales de mercado',     description: 'Accede a valoraciones precisas basadas en datos actualizados. Ni más ni menos de lo que vale.' },
   { icon: Star,       num: '04', title: 'Servicio de excelencia',        description: 'Atención personalizada en cada etapa del proceso. Estamos contigo desde la búsqueda hasta la firma.' },
   { icon: Clock,      num: '05', title: 'Respuesta en menos de 1 hora',  description: 'Nuestro equipo responde rápido. Ningún cliente espera más de una hora por una consulta.' },
