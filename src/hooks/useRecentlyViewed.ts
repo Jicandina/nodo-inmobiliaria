@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const KEY = 'elfaro_recently_viewed';
+const KEY = 'inmobiliaria_recently_viewed';
 const MAX = 6;
 
 export function useRecentlyViewed(currentId?: string) {

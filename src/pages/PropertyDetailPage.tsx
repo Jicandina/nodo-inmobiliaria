@@ -52,10 +52,10 @@ export default function PropertyDetailPage() {
   }, [lightbox, property]);
 
   useSEO({
-    title: property ? `${property.title} | El Faro Inmobiliaria` : 'El Faro Inmobiliaria',
+    title: property ? `${property.title} | Inmobiliaria` : 'Inmobiliaria',
     description: property
       ? `${property.title} — ${property.location.zone}, ${property.location.city}. ${property.features.area}m², ${property.features.bedrooms > 0 ? `${property.features.bedrooms} hab., ` : ''}precio ${property.currency === 'USD' ? '$' : ''}${property.price.toLocaleString()} ${property.currency}.`
-      : 'Detalle de propiedad en El Faro Inmobiliaria.',
+      : 'Detalle de propiedad en Inmobiliaria.',
   });
 
   if (loading) return (
@@ -74,7 +74,7 @@ export default function PropertyDetailPage() {
   const fmt = (price: number, cur: string) =>
     cur === 'USD' ? `$${price.toLocaleString('en-US')}` : `${price.toLocaleString()} ${cur}`;
 
-  const waMsg = `Hola, estoy interesado en la propiedad "${property.title}" (${fmt(property.price, property.currency)}) que vi en El Faro Inmobiliaria. ¿Me pueden dar más información?`;
+  const waMsg = `Hola, estoy interesado en la propiedad "${property.title}" (${fmt(property.price, property.currency)}) que vi en Inmobiliaria. ¿Me pueden dar más información?`;
 
   const prev = () => setImg((i) => (i - 1 + property.images.length) % property.images.length);
   const next = () => setImg((i) => (i + 1) % property.images.length);

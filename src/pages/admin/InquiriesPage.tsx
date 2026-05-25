@@ -189,7 +189,7 @@ export default function InquiriesPage() {
               </div>
 
               <div className="flex flex-wrap gap-2 pt-2 border-t border-white/5">
-                <a href={`https://wa.me/${selected.phone.replace(/\D/g,'').replace(/^0/,'58')}?text=${encodeURIComponent(`Hola ${selected.name}, le contactamos de El Faro Inmobiliaria sobre su consulta.`)}`}
+                <a href={`https://wa.me/${selected.phone.replace(/\D/g,'').replace(/^0/,'58')}?text=${encodeURIComponent(`Hola ${selected.name}, le contactamos sobre su consulta inmobiliaria.`)}`}
                   target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 bg-[#25D366] hover:bg-[#20b957] text-white text-sm font-semibold rounded-xl transition-all">
                   <MessageSquare className="w-4 h-4" />

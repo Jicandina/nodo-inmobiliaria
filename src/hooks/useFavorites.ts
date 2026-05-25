@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const KEY = 'elfaro_favorites';
+const KEY = 'inmobiliaria_favorites';
 
 export function useFavorites() {
   const [ids, setIds] = useState<string[]>(() => {

@@ -51,7 +51,7 @@ export default function PropertiesPage() {
   const [showFilters, setShowFilters] = useState(false);
 
   useSEO({
-    title: 'Propiedades | El Faro Inmobiliaria',
+    title: 'Propiedades | Inmobiliaria',
     description: 'Explora cientos de propiedades en Venezuela. Apartamentos, casas, oficinas y locales en venta y alquiler en Caracas, Valencia, Maracaibo y más ciudades.',
   });
 

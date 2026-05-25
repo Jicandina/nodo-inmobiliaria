@@ -21,7 +21,7 @@ export default function ContactPage() {
   const [error, setError]   = useState('');
 
   useSEO({
-    title: 'Contacto | El Faro Inmobiliaria',
+    title: 'Contacto | Inmobiliaria',
     description: 'Contáctanos para comprar, vender o alquilar una propiedad en Venezuela. Asesores disponibles por teléfono, correo y WhatsApp.',
   });
 
@@ -64,8 +64,8 @@ export default function ContactPage() {
           <div className="space-y-4">
             {[
               { icon: Phone,          title: 'Teléfono',   value: '+58 412-800-0000',    href: 'tel:+584128000000',    sub: 'Lunes a Sábado, 8am – 6pm' },
-              { icon: MessageCircle,  title: 'WhatsApp',   value: '+58 412-800-0000',    href: buildWaUrl('584128000000', 'Hola, me comunico desde elfaro.com.ve y quisiera asesoría.'), sub: 'Respuesta en menos de 1 hora' },
-              { icon: Mail,           title: 'Correo',     value: 'info@elfaro.com.ve',  href: 'mailto:info@elfaro.com.ve', sub: 'Respuesta en 24 horas' },
+              { icon: MessageCircle,  title: 'WhatsApp',   value: '+58 412-800-0000',    href: buildWaUrl('584128000000', 'Hola, me comunico desde inmobiliaria.com.ve y quisiera asesoría.'), sub: 'Respuesta en menos de 1 hora' },
+              { icon: Mail,           title: 'Correo',     value: 'info@inmobiliaria.com.ve',  href: 'mailto:info@inmobiliaria.com.ve', sub: 'Respuesta en 24 horas' },
               { icon: MapPin,         title: 'Oficina',    value: 'Las Mercedes, Caracas', href: '#',                  sub: 'Av. Principal de Las Mercedes' },
             ].map(({ icon: Icon, title, value, href, sub }) => (
               <a key={title} href={href}
@@ -105,7 +105,7 @@ export default function ContactPage() {
             <div className="p-5 rounded-2xl bg-[#25D366]/5 border border-[#25D366]/20 text-center">
               <p className="text-white font-semibold text-sm mb-1">¿Prefieres chatear?</p>
               <p className="text-navy-500 text-xs mb-4">Respuesta inmediata por WhatsApp</p>
-              <WhatsAppButton message="Hola, quiero hablar con un asesor de El Faro Inmobiliaria."
+              <WhatsAppButton message="Hola, quiero hablar con un asesor de Inmobiliaria."
                 label="Abrir WhatsApp" className="w-full justify-center" />
             </div>
           </div>

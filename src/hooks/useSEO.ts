@@ -5,7 +5,7 @@ interface SEOProps {
   description: string;
 }
 
-const DEFAULT_TITLE = 'El Faro Inmobiliaria';
+const DEFAULT_TITLE = 'Inmobiliaria';
 const DEFAULT_DESC  = 'La inmobiliaria de confianza en Venezuela. Compra, vende o alquila propiedades verificadas con asesores expertos.';
 
 function setMeta(name: string, content: string) {

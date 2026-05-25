@@ -17,8 +17,8 @@ const AuthContext = createContext<AuthContextValue | null>(null);
 const FIREBASE_READY = Boolean(import.meta.env.VITE_FIREBASE_API_KEY);
 
 // ── Demo auth (usado cuando no hay Firebase configurado) ──────────
-const DEMO_CREDENTIALS = { email: 'admin@elfaro.com.ve', password: 'elfaro2024' };
-const SESSION_KEY = 'elfaro_admin_session';
+const DEMO_CREDENTIALS = { email: 'admin@inmobiliaria.com.ve', password: 'admin2024' };
+const SESSION_KEY = 'inmobiliaria_admin_session';
 
 function useDemoAuth() {
   const [user, setUser] = useState<AuthUser | null>(() => {

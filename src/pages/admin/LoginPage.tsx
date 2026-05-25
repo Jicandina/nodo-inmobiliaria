@@ -65,7 +65,7 @@ export default function LoginPage() {
                 type="email"
                 required
                 autoFocus
-                placeholder="admin@elfaro.com.ve"
+                placeholder="admin@inmobiliaria.com.ve"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="input-field"
@@ -116,7 +116,7 @@ export default function LoginPage() {
         </div>
 
         <p className="text-center text-navy-700 text-xs mt-4">
-          © {new Date().getFullYear()} El Faro Inmobiliaria
+          © {new Date().getFullYear()} Inmobiliaria
         </p>
       </div>
     </div>

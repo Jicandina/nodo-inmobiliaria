@@ -21,8 +21,8 @@ const CATEGORIES = [
 
 export default function HomePage() {
   useSEO({
-    title: 'El Faro Inmobiliaria — Tu hogar en Venezuela',
-    description: 'Compra, vende o alquila propiedades en Venezuela con El Faro Inmobiliaria. Más de 10 años de experiencia, propiedades verificadas en Caracas, Valencia, Maracaibo y más.',
+    title: 'Inmobiliaria — Tu hogar en Venezuela',
+    description: 'Compra, vende o alquila propiedades en Venezuela con Inmobiliaria. Más de 10 años de experiencia, propiedades verificadas en Caracas, Valencia, Maracaibo y más.',
   });
   const searchRef = useRef<HTMLDivElement>(null);
   const [filters, setFilters] = useState<SearchFilters>({});

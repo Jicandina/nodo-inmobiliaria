@@ -26,7 +26,7 @@ export default function WhyUs() {
           <div className="section-accent" />
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
             Por qué elegir<br />
-            <span className="text-gold-400">El Faro</span>
+            <span className="text-gold-400">nosotros</span>
           </h2>
           <p className="text-navy-300/60 text-base leading-relaxed max-w-xs">
             Somos más que una inmobiliaria. Somos tu guía en la decisión más importante de tu vida.

@@ -11,8 +11,8 @@ export default function FavoritesPage() {
   const { properties, loading } = useProperties({});
 
   useSEO({
-    title: 'Mis Favoritos | El Faro Inmobiliaria',
-    description: 'Tus propiedades guardadas en El Faro Inmobiliaria. Compara y contacta fácilmente las propiedades que más te gustaron.',
+    title: 'Mis Favoritos | Inmobiliaria',
+    description: 'Tus propiedades guardadas en Inmobiliaria. Compara y contacta fácilmente las propiedades que más te gustaron.',
   });
 
   const favs = properties.filter(p => ids.includes(p.id));

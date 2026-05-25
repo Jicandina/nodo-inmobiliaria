@@ -18,16 +18,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-14 border-b border-white/5">
 
           <div className="md:col-span-5">
-            <div className="inline-flex mb-6" style={{ background: 'white', borderRadius: '7px', padding: '3px 8px' }}>
-              <img
-                src="/logo-elfaro.png"
-                alt="El Faro Bienes Raíces"
-                className="h-10 w-auto"
-                style={{ objectFit: 'contain', display: 'block' }}
-              />
+            <div className="inline-flex mb-6" style={{ background: 'white', borderRadius: '7px', padding: '5px 12px', alignItems: 'center', gap: '6px' }}>
+              <div style={{ width: 22, height: 22, background: '#030904', borderRadius: 4, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <span style={{ color: '#fbbf24', fontSize: 14, fontWeight: 900, lineHeight: 1 }}>I</span>
+              </div>
+              <span style={{ color: '#030904', fontSize: 13, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', lineHeight: 1 }}>Inmobiliaria</span>
             </div>
             <p className="text-white/30 text-sm leading-relaxed max-w-xs">
-              Desde 2014, guiando a familias y empresas hacia la propiedad perfecta en Venezuela.
+              Tu aliado de confianza para encontrar la propiedad perfecta en Venezuela.
             </p>
           </div>
 
@@ -55,9 +53,9 @@ export default function Footer() {
                 <p className="text-white/18 text-xs mt-1 ml-7">Lun–Sáb, 8am–6pm</p>
               </li>
               <li>
-                <a href="mailto:info@elfaro.com.ve" className="flex items-center gap-3 text-white/35 hover:text-white text-sm transition-colors duration-150 group">
+                <a href="mailto:info@inmobiliaria.com.ve" className="flex items-center gap-3 text-white/35 hover:text-white text-sm transition-colors duration-150 group">
                   <Mail className="w-4 h-4 text-gold-500/50 group-hover:text-gold-400 transition-colors shrink-0" />
-                  info@elfaro.com.ve
+                  info@inmobiliaria.com.ve
                 </a>
               </li>
               <li className="flex items-start gap-3 text-white/35 text-sm">
@@ -70,7 +68,7 @@ export default function Footer() {
 
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-white/18 text-xs">
-            © {new Date().getFullYear()} El Faro Bienes Raíces. Todos los derechos reservados.
+            © {new Date().getFullYear()} Inmobiliaria. Todos los derechos reservados.
           </p>
           <p className="text-white/18 text-xs">Venezuela</p>
         </div>

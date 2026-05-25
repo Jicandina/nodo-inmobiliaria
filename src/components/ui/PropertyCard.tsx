@@ -32,7 +32,7 @@ export default function PropertyCard({ property }: { property: Property }) {
     return `Bs. ${price.toLocaleString()}`;
   };
 
-  const waMsg = `Hola, vi la propiedad "${property.title}" en El Faro Inmobiliaria y me gustaría más información.`;
+  const waMsg = `Hola, vi la propiedad "${property.title}" y me gustaría más información.`;
 
   return (
     <div style={{ perspective: '1000px' }}>

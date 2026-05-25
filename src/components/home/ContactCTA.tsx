@@ -31,7 +31,7 @@ export default function ContactCTA() {
           className="flex flex-col gap-4"
         >
           <a
-            href={buildWaUrl('584128000000', 'Hola, me gustaría hablar con un asesor de El Faro Inmobiliaria.')}
+            href={buildWaUrl('584128000000', 'Hola, me gustaría hablar con un asesor inmobiliario.')}
             target="_blank" rel="noopener noreferrer"
             className="group flex items-center justify-between px-7 py-5 bg-[#25D366]/10 hover:bg-[#25D366]/20 border border-[#25D366]/20 hover:border-[#25D366]/40 rounded-2xl transition-all duration-200"
           >

@@ -11,7 +11,7 @@ const VALUES = [
 ];
 
 const MILESTONES = [
-  { year: '2014', event: 'Fundamos El Faro con 15 propiedades en Caracas' },
+  { year: '2014', event: 'Fundamos la inmobiliaria con 15 propiedades en Caracas' },
   { year: '2016', event: 'Expandimos operaciones a Valencia y Maracaibo' },
   { year: '2018', event: 'Superamos 1,000 transacciones exitosas' },
   { year: '2020', event: 'Lanzamos nuestra plataforma digital' },
@@ -21,8 +21,8 @@ const MILESTONES = [
 
 export default function AboutPage() {
   useSEO({
-    title: 'Nosotros | El Faro Inmobiliaria',
-    description: 'Conoce al equipo de El Faro Inmobiliaria. Más de 10 años de experiencia en el mercado inmobiliario venezolano, 3,000+ clientes satisfechos.',
+    title: 'Nosotros | Inmobiliaria',
+    description: 'Conoce al equipo de Inmobiliaria. Más de 10 años de experiencia en el mercado inmobiliario venezolano, 3,000+ clientes satisfechos.',
   });
 
   return (
@@ -52,7 +52,7 @@ export default function AboutPage() {
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
               <img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=800&q=80"
-                alt="Equipo El Faro" className="w-full h-full object-cover opacity-80" />
+                alt="Equipo inmobiliaria" className="w-full h-full object-cover opacity-80" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950/70 to-transparent" />
             </div>
             {/* Floating stats card */}

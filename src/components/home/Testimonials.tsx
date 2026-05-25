@@ -4,7 +4,7 @@ const TESTIMONIALS = [
   {
     name: 'Patricia Herrera',
     role: 'Compradora — Las Mercedes',
-    text: 'El equipo de El Faro encontró exactamente lo que buscaba y manejó toda la documentación sin un solo error. La experiencia más fluida que he tenido comprando un inmueble.',
+    text: 'El equipo encontró exactamente lo que buscaba y manejó toda la documentación sin un solo error. La experiencia más fluida que he tenido comprando un inmueble.',
   },
   {
     name: 'Alejandro Bravo',
@@ -14,7 +14,7 @@ const TESTIMONIALS = [
   {
     name: 'Valeria Díaz',
     role: 'Arrendataria — Chacao',
-    text: 'Busqué oficina por semanas sin éxito. El Faro encontró el espacio ideal en menos de una semana y negoció mejores condiciones de las que esperaba.',
+    text: 'Busqué oficina por semanas sin éxito. Me encontraron el espacio ideal en menos de una semana y negoció mejores condiciones de las que esperaba.',
   },
 ];
 

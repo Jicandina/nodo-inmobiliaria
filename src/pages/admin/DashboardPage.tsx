@@ -90,7 +90,7 @@ export default function DashboardPage() {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold text-white">Dashboard</h1>
-          <p className="text-navy-400 text-sm mt-1">Resumen general de El Faro Inmobiliaria</p>
+          <p className="text-navy-400 text-sm mt-1">Resumen general de la inmobiliaria</p>
         </div>
         <Link to="/admin/nueva" className="btn-primary text-sm py-2.5">
           <PlusCircle className="w-4 h-4" /> Nueva propiedad

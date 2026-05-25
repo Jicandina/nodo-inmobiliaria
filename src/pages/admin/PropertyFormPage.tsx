@@ -359,7 +359,7 @@ export default function PropertyFormPage() {
             <Field label="Correo de contacto">
               <input type="email" value={form.contactEmail}
                 onChange={(e) => set('contactEmail', e.target.value)}
-                placeholder="info@elfaro.com.ve" className="input-field" />
+                placeholder="info@inmobiliaria.com.ve" className="input-field" />
             </Field>
           </div>
         </Section>

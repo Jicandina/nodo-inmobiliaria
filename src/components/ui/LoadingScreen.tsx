@@ -25,10 +25,10 @@ export default function LoadingScreen() {
             className="flex flex-col items-center gap-6"
           >
             <div className="w-16 h-16 rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center">
-              <span className="text-gold-400 font-bold text-2xl font-display">F</span>
+              <span className="text-gold-400 font-bold text-2xl font-display">I</span>
             </div>
             <div className="text-center">
-              <p className="text-white font-bold text-xl font-display tracking-wide">El Faro</p>
+              <p className="text-white font-bold text-xl font-display tracking-wide">Inmobiliaria</p>
               <p className="text-navy-400 text-xs tracking-widest uppercase mt-1">Inmobiliaria</p>
             </div>
             <div className="w-40 h-0.5 bg-navy-800 rounded-full overflow-hidden">

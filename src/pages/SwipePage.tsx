@@ -149,7 +149,7 @@ export default function SwipePage() {
   const [done, setDone]         = useState(false);
 
   useSEO({
-    title: 'Explorar Propiedades | El Faro Inmobiliaria',
+    title: 'Explorar Propiedades | Inmobiliaria',
     description: 'Descubre propiedades en Venezuela de forma divertida. Desliza para explorar apartamentos, casas y más en modo interactivo.',
   });
 

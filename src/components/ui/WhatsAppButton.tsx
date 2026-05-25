@@ -1,7 +1,7 @@
 import { MessageCircle } from 'lucide-react';
 
 const DEFAULT_PHONE = '584128000000';
-const DEFAULT_MSG   = 'Hola, visité elfaro.com.ve y quisiera información sobre una propiedad.';
+const DEFAULT_MSG   = 'Hola, quisiera información sobre una propiedad.';
 
 interface Props {
   phone?:   string;
