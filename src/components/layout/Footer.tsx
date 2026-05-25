@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import FaroLogo from '../ui/FaroLogo';
 
 const LINKS = [
   { label: 'Inicio',               to: '/' },
@@ -10,6 +11,11 @@ const LINKS = [
   { label: 'Contacto',              to: '/contacto' },
 ];
 
+const LEGAL = [
+  { label: 'Política de Privacidad', to: '/privacidad' },
+  { label: 'Términos de Uso',        to: '/terminos' },
+];
+
 export default function Footer() {
   return (
     <footer className="border-t border-white/6 mt-4">
@@ -18,11 +24,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-14 border-b border-white/5">
 
           <div className="md:col-span-5">
-            <div className="inline-flex mb-6" style={{ background: 'white', borderRadius: '7px', padding: '5px 12px', alignItems: 'center', gap: '6px' }}>
-              <div style={{ width: 22, height: 22, background: '#030904', borderRadius: 4, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <span style={{ color: '#fbbf24', fontSize: 14, fontWeight: 900, lineHeight: 1 }}>I</span>
-              </div>
-              <span style={{ color: '#030904', fontSize: 13, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', lineHeight: 1 }}>Inmobiliaria</span>
+            <div className="mb-6">
+              <FaroLogo size={32} />
             </div>
             <p className="text-white/30 text-sm leading-relaxed max-w-xs">
               Tu aliado de confianza para encontrar la propiedad perfecta en Venezuela.
@@ -70,7 +73,13 @@ export default function Footer() {
           <p className="text-white/18 text-xs">
             © {new Date().getFullYear()} Inmobiliaria. Todos los derechos reservados.
           </p>
-          <p className="text-white/18 text-xs">Venezuela</p>
+          <div className="flex items-center gap-5">
+            {LEGAL.map((l) => (
+              <Link key={l.to} to={l.to} className="text-white/18 text-xs hover:text-white/40 transition duration-150">
+                {l.label}
+              </Link>
+            ))}
+          </div>
         </div>
 
       </div>

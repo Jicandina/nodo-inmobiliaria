@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 const STATS = [
   { target: 600,  suffix: '+',     label: 'propiedades listadas' },
   { target: 3000, suffix: '+',     label: 'clientes atendidos', format: true },
-  { target: 8,    suffix: '',      label: 'ciudades activas' },
+  { target: 15,   suffix: '',      label: 'ciudades activas' },
   { target: 10,   suffix: ' años', label: 'de trayectoria' },
 ];
 

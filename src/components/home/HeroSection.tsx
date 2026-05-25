@@ -15,7 +15,7 @@ export default function HeroSection({ onSearch }: Props) {
   const bgY = useTransform(scrollY, [0, 800], ['0%', '18%']);
 
   return (
-    <section className="relative h-[100dvh] overflow-hidden">
+    <section className="relative min-h-[100dvh] overflow-hidden">
 
       {/* Full-bleed photo */}
       <div className="absolute inset-0">
@@ -61,9 +61,12 @@ export default function HeroSection({ onSearch }: Props) {
           >
             <button
               onClick={onSearch}
-              className="btn-primary px-8 py-4 text-[15px]"
+              className="btn-primary px-8 py-4 text-[15px] group"
             >
               Ver propiedades
+              <span className="w-6 h-6 rounded-full bg-navy-950/20 flex items-center justify-center group-hover:translate-x-0.5 transition-transform duration-200">
+                <ArrowRight className="w-3.5 h-3.5" />
+              </span>
             </button>
             <Link
               to="/contacto"

@@ -21,23 +21,23 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold rounded-xl transition-all duration-200 shadow-gold hover:shadow-gold-lg active:scale-95;
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold rounded-xl transition duration-200 shadow-gold hover:shadow-gold-lg active:scale-[0.97];
   }
   .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-gold-500/60 hover:border-gold-400 text-gold-400 hover:text-gold-300 font-semibold rounded-xl transition-all duration-200 hover:bg-gold-500/10 active:scale-95;
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-gold-500/60 hover:border-gold-400 text-gold-400 hover:text-gold-300 font-semibold rounded-xl transition duration-200 hover:bg-gold-500/10 active:scale-[0.97];
   }
   .btn-navy {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-navy-700 hover:bg-navy-600 text-white font-semibold rounded-xl transition-all duration-200 border border-navy-600 active:scale-95;
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-navy-700 hover:bg-navy-600 text-white font-semibold rounded-xl transition duration-200 border border-navy-600 active:scale-[0.97];
   }
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 px-4 py-2 text-navy-200 hover:text-white hover:bg-white/5 font-medium rounded-lg transition-all duration-200;
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 text-navy-200 hover:text-white hover:bg-white/5 font-medium rounded-lg transition duration-200;
   }
 
   .card {
     @apply bg-navy-900 border border-navy-800/60 rounded-2xl shadow-card overflow-hidden;
   }
   .card-hover {
-    @apply card transition-all duration-300 hover:border-gold-500/30 hover:shadow-card-hover hover:-translate-y-1;
+    @apply card transition duration-300 hover:border-gold-500/30 hover:shadow-card-hover;
   }
 
   .input-field {
@@ -71,5 +71,22 @@
   }
   .section-accent {
     @apply w-12 h-0.5 bg-gradient-to-r from-gold-500 to-gold-300 rounded-full mb-4;
+  }
+}
+
+/* Card lift only on devices that support real hover (not touch) */
+@media (hover: hover) and (pointer: fine) {
+  .card-hover:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

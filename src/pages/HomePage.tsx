@@ -65,7 +65,7 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 40, rotateX: 10 }}
               whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
               viewport={{ once: true, margin: '-60px' }}
-              transition={{ duration: 0.65, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.65, delay: i * 0.05, ease: [0.22, 1, 0.36, 1] }}
             >
               <Link to={cat.to}
                 className="relative overflow-hidden rounded-2xl h-52 flex group border border-white/5 hover:border-gold-500/30 transition-all duration-300">
